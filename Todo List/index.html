@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./icon/clipboard-note-document-report-paper-list-data-svgrepo-com.svg">
+</head>
+<body>
+
+    <span>
+        Nesse To-Do List você pode se organizar pelos dias da semana, semanalmente, mensalmente, trimestralmente e semestralmente.
+    </span>
+
+
+    <!--################################################################-->
+
+    <section class="todo-section">
+        <h3>Diariamente</h3>
+        
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Domingo</th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                        <th>Sábado</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr>
+                        <td data-key="day-0"><button class="add-btn-day">+</button></td>
+                        <td data-key="day-1"><button class="add-btn-day">+</button></td>
+                        <td data-key="day-2"><button class="add-btn-day">+</button></td>
+                        <td data-key="day-3"><button class="add-btn-day">+</button></td>
+                        <td data-key="day-4"><button class="add-btn-day">+</button></td>
+                        <td data-key="day-5"><button class="add-btn-day">+</button></td>
+                        <td data-key="day-6"><button class="add-btn-day">+</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!--################################################################-->
+
+
+    <section class="todo-section">
+        <h3>Semanal</h3>
+
+        <div class="table-wrapper">
+            <table class="todo-table">
+                <thead>
+                    <tr>
+                        <th>S1</th>
+                        <th>S2</th>
+                        <th>S3</th>
+                        <th>S4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-key="week-1"><button class="add-btn-sema">+</button></td>
+                        <td data-key="week-2"><button class="add-btn-sema">+</button></td>
+                        <td data-key="week-3"><button class="add-btn-sema">+</button></td>
+                        <td data-key="week-4"><button class="add-btn-sema">+</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!--################################################################-->
+
+
+    <section class="todo-section">
+        <h3>Mensal</h3>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jan</th>
+                        <th>Fev</th>
+                        <th>Mar</th>
+                        <th>Abr</th>
+                        <th>Mai</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Ago</th>
+                        <th>Set</th>
+                        <th>Out</th>
+                        <th>Nov</th>
+                        <th>Dez</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-key="month-jan"><button class="add-btn-mens">+</button></td>
+                        <td data-key="month-fev"><button class="add-btn-mens">+</button></td>
+                        <td data-key="month-mar"><button class="add-btn-mens">+</button></td>
+                        <td data-key="month-abr"><button class="add-btn-mens">+</button></td>
+                        <td data-key="month-mai"><button class="add-btn-mens">+</button></td>
+                        <td data-key="month-jun"><button class="add-btn-mens">+</button></td>
+                        <td data-key="month-jul"><button class="add-btn-mens">+</button></td>
+                        <td data-key="month-ago"><button class="add-btn-mens">+</button></td>
+                        <td data-key="month-set"><button class="add-btn-mens">+</button></td>
+                        <td data-key="month-out"><button class="add-btn-mens">+</button></td>
+                        <td data-key="month-nov"><button class="add-btn-mens">+</button></td>
+                        <td data-key="month-dez"><button class="add-btn-mens">+</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!--################################################################-->
+
+
+    <section class="todo-section">
+        <h3>Trimestral</h3>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Q1</th>
+                        <th>Q2</th>
+                        <th>Q3</th>
+                        <th>Q4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-key="quarter-1"><button class="add-btn-tri">+</button></td>
+                        <td data-key="quarter-2"><button class="add-btn-tri">+</button></td>
+                        <td data-key="quarter-3"><button class="add-btn-tri">+</button></td>
+                        <td data-key="quarter-4"><button class="add-btn-tri">+</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <!--################################################################-->
+
+
+    <section class="todo-section">
+        <h3>Semestral</h3>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>H1</th>
+                        <th>H2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-key="half-1"><button class="add-btn-seme">+</button></td>
+                        <td data-key="half-2"><button class="add-btn-seme">+</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    
+    <script src="js/functions.js"></script>
+</body>
+</html>

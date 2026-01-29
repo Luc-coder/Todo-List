@@ -1,0 +1,170 @@
+/* RESET BÁSICO */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    padding: 16px;
+    color: #1f2933;
+}
+
+/* TEXTO INICIAL */
+span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.todo-section {
+    margin-bottom: 124px;
+}
+
+
+/* TÍTULOS */
+h3 {
+    margin: 24px 0 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* WRAPPER PRA SCROLL */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 16px;
+}
+
+/* TABELAS */
+table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* CABEÇALHO */
+th {
+    background: #111827;
+    color: #fff;
+    padding: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* CÉLULAS */
+td {
+    vertical-align: top;
+    padding: 10px;
+    border-right: 1px solid #e5e7eb;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+/* BOTÃO + */
+td > button {
+    width: 100%;
+    padding: 6px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+td > button:hover {
+    background: #1e40af;
+}
+
+/* TASK */
+.task {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+
+
+/* CHECKBOX */
+.task input[type="checkbox"] {
+    accent-color: #2563eb;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* TEXTO */
+.task span {
+    flex: 1;
+    font-size: 0.9rem;
+    word-break: break-word;
+}
+
+/* CONCLUÍDA */
+.task.done {
+    opacity: 0.6;
+}
+
+.task.done span {
+    text-decoration: line-through;
+}
+
+/* BOTÕES DA TASK */
+.task button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 2px;
+    opacity: 0.6;
+    transition: opacity 0.2s, transform 0.1s;
+    align-self: start;
+    flex-shrink: 0;
+}
+
+.task button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    table {
+        min-width: 700px;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    td > button {
+        font-size: 1rem;
+    }
+}
