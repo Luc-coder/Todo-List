@@ -27,7 +27,7 @@ Este projeto foi criado para fins de estudo e para compor meu portfólio, coloca
 
 # Preview
 
-![Preview do projeto](Screen.png)
+![Preview do projeto](screen.png)
 
 
 # Como executar o projeto
