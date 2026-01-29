@@ -34,7 +34,7 @@ Este projeto foi criado para fins de estudo e para compor meu portfólio, coloca
 
 Clone o repositório:
 
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/Luc-coder/Todo-List.git
 
 
 Acesse a pasta do projeto:
